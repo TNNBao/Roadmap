@@ -4,10 +4,10 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import { Stack } from "expo-router";
 import { NavigationContainer } from "@react-navigation/native";
-import HomeScreen from "@/src/app/(tabs)/HomeScreen";
-import MyCourse from "@/src/app/(tabs)/MyCourse";
-import LeaderBoard from "@/src/app/(tabs)/LeaderBoard";
-import ProfileScreen from "@/src/app/(tabs)/ProfileScreen";
+import HomeScreen from "@/src/app/(stack)/(tabs)/HomeScreen";
+import MyCourse from "@/src/app/(stack)/(tabs)/MyCourse";
+import LeaderBoard from "@/src/app/(stack)/(tabs)/LeaderBoard";
+import ProfileScreen from "@/src/app/(stack)/(tabs)/ProfileScreen";
 
 const Tab = createBottomTabNavigator();
 export default function TabNavigation() {

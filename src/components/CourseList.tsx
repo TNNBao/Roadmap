@@ -138,7 +138,13 @@ const CourseList = ({ level }: Props) => {
         renderItem={({ item }) => (
           <TouchableOpacity
             onPress={() => {
-              router.push("../../app/(tabs)/(details)/CourseDetailsScreen");
+              router.push({
+                ///@ts-ignore
+                pathname: "(details)/[id]",
+                params: {
+                  id: item.id,
+                },
+              });
             }}
           >
             <View className="p-4 me-3 bg-white rounded-xl">
